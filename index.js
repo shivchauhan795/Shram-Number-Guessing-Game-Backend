@@ -17,7 +17,7 @@ dotenv.config()
 const mongourl = process.env.MONGO_URL
 const client = new MongoClient(mongourl, {
     tls: true,  // Enable TLS
-    tlsInsecure: true,  // Ensure certificates are validated
+    tlsInsecure: false,  // Ensure certificates are validated
     connectTimeoutMS: 10000,
 })
 
