@@ -31,7 +31,7 @@ await client.connect()
 
 // for production
 app.use(cors({
-  origin: 'https://shram-assignment.netlify.app/', // Specify your frontend domain
+  origin: 'https://shram-assignment.netlify.app', // Specify your frontend domain
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true // Allow cookies or other credentials to be sent
 }));
